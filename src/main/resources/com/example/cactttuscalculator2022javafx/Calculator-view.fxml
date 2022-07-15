@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.example.cactttuscalculator2022javafx.CalculatorController"
+        prefHeight="400.0" prefWidth="600.0">
+
+
+    <TextField fx:id="txtResult" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="4" text=" 0"
+               alignment="CENTER_RIGHT" style="-fx-background-color: blue; -fx-fill: white"/>
+    <!--- Rreshti1 -->
+    <Button fx:id="btnClear" GridPane.columnIndex="0" GridPane.rowIndex="1" text="Clear" prefHeight="75"
+            prefWidth="75"/>
+    <Button fx:id="btnFuqia" GridPane.rowIndex="1" GridPane.columnIndex="1" text="X2" prefHeight="75" prefWidth="75"/>
+    <Button fx:id="btnSqrt" GridPane.rowIndex="1" GridPane.columnIndex="2" text="Sqrt" prefHeight="75" prefWidth="75"/>
+    <Button fx:id="btnDivide" GridPane.rowIndex="1" GridPane.columnIndex="3" text="/" prefHeight="75"
+            prefWidth="75" onAction="#onOperantClick"/>
+    <!--- Rreshti2 -->
+
+    <Button fx:id="btn7" GridPane.columnIndex="0" GridPane.rowIndex="2" text="7" prefHeight="75"
+            onAction="#btnNumeberClick" prefWidth="75"/>
+    <Button fx:id="btn8" GridPane.rowIndex="2" GridPane.columnIndex="1" text="8" prefHeight="75" prefWidth="75"
+            onAction="#btnNumeberClick"/>
+    <Button fx:id="btn9" GridPane.rowIndex="2" GridPane.columnIndex="2" text="9" prefHeight="75" prefWidth="75"
+            onAction="#btnNumeberClick"/>
+
+    <Button fx:id="btnMultiply" GridPane.rowIndex="2" GridPane.columnIndex="3" text="X" prefHeight="75"
+            prefWidth="75" onAction="#onOperantClick"/>
+
+    <!--- Rreshti3 -->
+
+    <Button fx:id="btn4" GridPane.columnIndex="0" GridPane.rowIndex="3" text="4" prefHeight="75"
+            prefWidth="75" onAction="#btnNumeberClick"/>
+    <Button fx:id="btn5" GridPane.rowIndex="3" GridPane.columnIndex="1" text="5" prefHeight="75" prefWidth="75"
+            onAction="#btnNumeberClick"/>
+    <Button fx:id="btn6" GridPane.rowIndex="3" GridPane.columnIndex="2" text="6" prefHeight="75" prefWidth="75"
+            onAction="#btnNumeberClick"/>
+
+    <Button fx:id="btnMinus" GridPane.rowIndex="3" GridPane.columnIndex="3" text="-" prefHeight="75"
+            prefWidth="75" onAction="#onOperantClick"/>
+
+    <!--- Rreshti 4 -->
+    <Button fx:id="btn1" GridPane.columnIndex="0" GridPane.rowIndex="4" text="1" prefHeight="75"
+            prefWidth="75" onAction="#btnNumeberClick"/>
+    <Button fx:id="btn2" GridPane.rowIndex="4" GridPane.columnIndex="1" text="2" prefHeight="75" prefWidth="75"
+            onAction="#btnNumeberClick"/>
+    <Button fx:id="btn3" GridPane.rowIndex="4" GridPane.columnIndex="2" text="3" prefHeight="75" prefWidth="75"
+            onAction="#btnNumeberClick"/>
+    <Button fx:id="btnPlus" GridPane.rowIndex="4" GridPane.columnIndex="3" text="+" prefHeight="75"
+            prefWidth="75" onAction="#onOperantClick"/>
+
+    <!--- Rreshti 5 -->
+    <Button fx:id="btnPlusMinus" GridPane.columnIndex="0" GridPane.rowIndex="5" text="+/-" prefHeight="75"
+            prefWidth="75"/>
+    <Button fx:id="btn0" GridPane.rowIndex="5" GridPane.columnIndex="1" text="0" prefHeight="75" prefWidth="75"
+            onAction="#btnNumeberClick"/>
+    <Button fx:id="btnDot" GridPane.rowIndex="5" GridPane.columnIndex="2" text="." prefHeight="75" prefWidth="75"
+            onAction="#btnPik"/>
+    <Button fx:id="btnEqual" GridPane.rowIndex="5" GridPane.columnIndex="3" text="=" prefHeight="75"
+            prefWidth="75"/>
+
+
+</GridPane>
